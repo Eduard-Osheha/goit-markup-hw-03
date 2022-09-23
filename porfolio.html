@@ -11,43 +11,49 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a class="header-logo link" href="index.html" lang="en"
-          ><span class="logo-aspect">Web</span>Studio</a
-        >
-        <ul class="header-list">
+      <div class="container">
+        <nav class="header-navigation">
+          <a class="header-logo link" href="index.html" lang="en"
+            ><span class="logo-aspect">Web</span>Studio</a
+          >
+          <ul class="header-list">
+            <li class="list-item">
+              <a class="header-link link secondary" href="index.html">Студія</a>
+            </li>
+            <li class="list-item">
+              <a class="header-link link text-shadow secondary current" href="porfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="header-link link secondary" href="index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="flex-contact">
           <li class="list-item">
-            <a class="header-link link secondary" href="index.html">Студія</a>
+            <a class="header-contact link secondary" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
           <li class="list-item">
-            <a class="header-link link text-shadow secondary current" href="porfolio.html"
-              >Портфоліо</a
+            <a class="header-contact link secondary" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="list-item">
-            <a class="header-link link secondary" href="index.html">Контакти</a>
-          </li>
         </ul>
-      </nav>
-      <ul>
-        <li class="list-item">
-          <a class="header-tel link secondary" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-        <li class="list-item">
-          <a class="header-mail link secondary" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio">
-        <h1 class="visually-hidden">Приклади робіт</h1>
+        <div class="container">
+          <h1 class="visually-hidden">Приклади робіт</h1>
         <ul>
           <li class="list-item">
             <button type="button" class="portfolio-button">Усі</button>
@@ -65,15 +71,19 @@
             <button type="button" class="portfolio-button">Маркетинг</button>
           </li>
         </ul>
-        <ul>
-          <li class="list-item">
+      </div>
+      <div class="container">
+         <ul>
+          <div class="flex-container">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/8.jpg" alt="Веб-сайт" width="370" />
+              <div class="card-text"
               <h2 class="portfolio-title">Технокряк</h2>
               <p class="portfolio-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/9.jpg" alt="проєкт дизайну" width="370" />
               <h2 class="portfolio-title">
@@ -82,60 +92,63 @@
               <p class="portfolio-text">Дизайн</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/10.jpg" alt="додаток ресторану" width="370" />
               <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
               <p class="portfolio-text">Додаток</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/11.jpg" alt="маркетинг проєкт" width="370" />
               <h2 class="portfolio-title">Проєкт <span lang="en">Prime</span></h2>
               <p class="portfolio-text">Маркетинг</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/12.jpg" alt="додаток Boxes" width="370" />
               <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
               <p class="portfolio-text">Додаток</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/13.jpg" alt="веб-сайт цікавого проєкту" width="370" />
               <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
               <p class="portfolio-text">Веб-сайт</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/14.jpg" alt="дизайн літературного видання" width="370" />
               <h2 class="portfolio-title">Видання <span>Limited Edition</span></h2>
               <p class="portfolio-text">Дизайн</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/15.jpg" alt="другий маркетинг проєкт" width="370" />
               <h2 class="portfolio-title">Проєкт <span>LAB</span></h2>
               <p class="portfolio-text">Маркетинг</p>
             </a>
           </li>
-          <li class="list-item">
+          <li class="list-item flex-item">
             <a class="link" href="">
               <img src="./images/16.jpg" alt="додаток розвитку бізнесу" width="370" />
               <h2 class="portfolio-title" lang="en">Growing Business</h2>
               <p class="portfolio-text">Додаток</p>
             </a>
           </li>
+          </div>
         </ul>
+      </div>       
       </section>
     </main>
     <footer class="footer">
-      <a class="footer-logo link" href="index.html" lang="en"
+      <div class="container">
+        <a class="footer-logo link" href="index.html" lang="en"
         ><span class="logo-aspect">Web</span>Studio</a
       >
       <address>
@@ -160,6 +173,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
